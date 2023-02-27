@@ -28,7 +28,7 @@ header {
 }
 .header_button1 {
     height: 48px;
-    width: 150px;
+    width: 175px;
     background-color: #E8EFF2;
     border: none;
     margin-top: 23px;
@@ -38,7 +38,7 @@ header {
 
 h3 {
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
 }
 .header_texts h1 {
     color: #162542;
@@ -57,7 +57,7 @@ p {
 .header_button2 {
     background-color: #F16718;
     height: 48px;
-    width: 150px;
+    width: 175px;
     border: none;
     margin-top: 23px;
     border-radius: 8px;
@@ -75,7 +75,7 @@ p {
     margin-top: 25px;
 }
 
-.header_img {
+.header_img_mobile {
     background-image: url(./assets/mobile/image-keyboard.jpg);
     width: 351px;
     background-repeat: no-repeat;
@@ -84,8 +84,15 @@ p {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     background-size: cover;
-    
-    
+}
+.header_img_tablet {
+    display: none;
+}
+.main_img1_tablet {
+    display: none;
+}
+.main_img2_tablet {
+    display: none;
 }
 /* main *//* main *//* main *//* main */
 
@@ -97,7 +104,7 @@ p {
 }
 /* /////////////////////////////////////////////// */
 .main_img_container {
-    display: flex;
+    right: 25px;
     position: relative;
 }
 .orange_color {
@@ -106,8 +113,9 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    color: #F16718;
-    
+    background-color: #F16718;
+    opacity: 0.5;
+    border-radius: 20px;
     
 }
 .main_img1 {
@@ -115,8 +123,8 @@ p {
     height: 193px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    position: relative;
-    right: 25px;
+    
+    
    
 }
 /* /////////////////////////////////////////////// */
@@ -173,8 +181,13 @@ p {
     
     
 }
+.containers {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 .container {
-    margin-top: 111px;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,11 +195,133 @@ p {
 
 
 footer {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    padding-left: 51px;
     margin-top: 96px;
     margin-bottom: 50px;
+    justify-content: center;
 }
 span {
     font-weight: 700;
+}
+/* tablet-size *//* tablet-size *//* tablet-size */
+@media (min-width: 768px) {
+header {
+    padding-left: 39px;
+    padding-top: 49px;
+    padding-right: 40px;
+}
+.header_texts {
+    margin-top: 131px;
+    
+}
+.header_texts h1 {
+    width: 339px;
+}
+.header_texts p {
+    width: 339px;
+    margin-bottom: 39px;
+}
+.header_img_mobile {
+    display: none;
+}
+.header_img_tablet {
+    display: inline;
+    background-image: url(./assets/tablet/image-keyboard.jpg);
+    width: 300px;
+    background-repeat: no-repeat;
+    height: 425px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    margin-bottom: 40px;   
+    
+    
+}
+
+.header_button1 {
+    height: 58px;
+
+}
+.header_button2 {
+    height: 58px;
+}
+.button_date {
+    margin-bottom: 130px;
+}
+.main_texts {
+    display: flex;
+
+}
+.main_1 {
+    padding-left: 40px;
+    
+}
+.main_texts h1 {
+   margin-left: 40px;
+   text-align: justify;
+}
+.main_texts p {
+    text-align: justify;
+    width: 398px;
+    
+}
+
+.main_2 {
+    padding-left: 39px;
+}
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 69px;
+    margin-top: 142px;
+    flex-direction: row;
+}
+.container {
+    align-items: start;
+}
+
+.container h1 {
+    text-align: start;
+}
+.container p {
+    width: 281px;
+    text-align: justify;
+}
+.main_img1 {
+    display: none;
+}
+.main_img1_tablet {
+    display: inline;
+    width: 214px;
+    border-radius: 20px;
+}
+.main_img2 {
+    display: none;
+}
+.main_img2_tablet {
+    display: inline;
+    width: 445px;
+    border-radius: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
